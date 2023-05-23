@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Star in Column Grid</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        body {
+            background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+            background-repeat: repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        body::after {
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+            background-repeat: repeat;
+            background-position: center center;
+            z-index: -1;
+            filter: brightness(0.2);
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 20px 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: right;
+        }
+
+        nav li .navi {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li .navi:hover {
+            background-color: #111;
+        }
+
+        .logo {
+            float: left;
+            width: 45px;
+            height: 45px;
+            margin-right: 20px;
+            border: 2px solid gray;
+            filter: grayscale(50%);
+            border-radius: 50%;
+
+        }
+
+        header {
+            padding: 5px;
+            text-align: center;
+        }
+
+
+        h1 {
+            font-size: 48px;
+            color: #fff;
+        }
+
+        main {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            background-color: #1c1c1c;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 30%;
+            height: 900px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card h1{
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .card p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.2);
+        }
+        .container-2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            float: left;
+            width: 49%;
+        }
+        .container-3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            float: right;
+            width: 49%;
+        }
+        
+        .card-2 {
+            background-color: #1c1c1c;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 900px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card-2 h1{
+            text-align: center;
+        }
+
+        .card-2 img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .card-2 p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+
+        .card-2:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.2);
+        }
+        .card-3 {
+            background-color: #1c1c1c;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 900px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card-3 h1{
+            text-align: center;
+        }
+
+        .card-3 img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .card-3 p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+
+        .card-3:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.2);
+        }
+
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img class="logo" src="logo.jpg" alt="Astronomy Webpage Logo">
+        </div>
+        <ul>
+            <li><a class="navi" href="About.html">About</a></li>
+            <li><a class="navi" href="Telescopes.html">Telescopes</a></li>
+            <li><a class="navi" href="Galaxies.html">Galaxies</a></li>
+            <li><a class="navi" href="Stars.html">Stars</a></li>
+            <li><a class="navi" href="SolarSystem.html">Solar System</a></li>
+            <li><a class="navi" href="News.html">News</a></li>
+            <li><a class="navi" href="ProjectWebsite.html">Home</a></li>
+        </ul>
+    </nav>
+    <header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Astronomy Apps</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card">                
+                <h1>Stellarium</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/stellarium.jpg" alt="Stellarium">
+
+                <p><i>“Stellarium Mobile is a planetarium app that shows exactly what you see when you look up at the stars.</i></p>
+
+                <p><i>Identify stars, constellations, planets, comets, satellites (such as the ISS), and other deep sky objects in real-time in the sky above you in just a few seconds, just by pointing the phone at the sky.</i></p>
+                    
+                <p><i>This award-winning astronomy application has an easy-to-use and minimalist user interface, that makes it one of the best astronomical applications for adults and children who want to explore the night sky.”</i></p>
+            </div>
+            <div class="card">                
+                <h1>Polar Scope Align Pro</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/polar-scope-align-pro.jpg" alt="Polar Scope Align Pro">
+
+                <p><i>“Polar Scope Align will calculate the position of Polaris or σ Octantis in your Polar Scope reticle for your location (using your phone’s GPS or entering a location), allowing a quick and accurate polar alignment.</i></p>
+
+                <p><i>It is one of the few programs that are accurate in lower latitudes by correcting for atmospheric refraction (so expect results to agree only with precise software and not most simplistic “polar align” apps).”</i></p>
+            </div>
+            <div class="card">
+                <h1>SkySafari 6/7 Pro</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/sky-safari-6-pro.jpg" alt="SkySafari 6/7 Pro">
+                <p><i>“SkySafari 6 Pro will revolutionize your astronomical viewing experience. It has the largest database of any astronomy app, includes every solar system object ever discovered, offers unparalleled accuracy, flawless telescope control, Augmented Reality (AR) mode, and provides the very best experience under the stars when you depend on it.”</i></p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+            <div class="card">                
+                <h1>PhotoPills</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/photopills.jpg" alt="PhotoPills">
+
+                <p><i>“Unlock your creative potential! Discover how to easily turn any Sun, Moon and Milky Way scene you imagine into a real picture… and start shooting truly legendary photos every time you pick up the camera!</i></p>
+
+                <p><i>Whether your passion is to capture beautiful landscapes, immortalize the infinite night sky, surprise the bride and the groom in their happiest day… or to travel the world, PhotoPills will make you love exploring new artistic possibilities to tell visual stories in a way it wasn’t possible before.”</i></p>
+            </div>
+            <div class="card">                
+                <h1>Clear Outside</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/clear-outside.jpg" alt="Clear Outside">
+
+                <p><i>“Reliable weather forecasts for astronomers with an emphasis on cloud cover. Updated hourly. Frequent hourly updates are important because often the clear spell between showers provides excellent seeing and 30-minutes under a clear sky with a grab-&-go telescope is pure gold!”</i></p>
+            </div>
+            <div class="card">
+                <h1>Astrospheric</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/astropheric.jpg" alt="Astrospheric">
+                <p><i>“Astrospheric is the most advanced forecasting service for North American astronomers. Using the amazing astronomy data produced by the Canadian Meteorological Center, NOAA, and more, Astrospheric quickly produces a highly accurate 48-hour forecast for any location in the continental United States or Canada.”</i></p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+            <div class="card">                
+                <h1>Celestron StarSense Explorer</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2021/12/celestron-starsense-explorer-mobile-app1.jpg" alt="Celestron StarSense Explorer">
+
+                <p><i>“This one-of-a-kind app uses patent-pending technology in combination with a Celestron StarSense Explorer telescope (sold separately) to analyze star patterns overhead to calculate the telescope’s position in real-time with pinpoint accuracy.</i></p>
+
+                <p><i>StarSense Explorer’s sky recognition technology has revolutionized the manual telescope by eliminating the confusion common among beginners and enhancing the user experience for even seasoned telescope users. Many would-be astronomers become frustrated or lose interest in their manual telescope because they don’t know where to point it to see planets, star clusters, nebulae, and galaxies—the good stuff! StarSense Explorer tells you exactly which celestial objects are currently visible in the night sky and where to move your telescope to place those objects in the telescope’s eyepiece.”</i></p>
+            </div>
+            <div class="card">                
+                <h1>Meteoblue</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/meteoblue.jpg" alt="Meteoblue">
+
+                <p><i>“Meteoblue shows high precision weather forecasts combined with a beautiful, simple and easy to use design. Weather forecasts can be requested for any place on Earth easily and comfortably.”</i></p>
+            </div>
+            <div class="card">
+                <h1>NightCap</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/nightcap.jpg" alt="NightCap">
+                <p><i>“NightCap Camera is a powerful app that takes amazing low light and night photos, videos and 4K time-lapse. Long exposure produces beautiful photos in low light and unique Astronomy modes capture the stars, Northern Lights (Aurora) and more!”</i></p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+            <div class="card">                
+                <h1>Star Walk</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/star-walk.jpg" alt="Star Walk">
+
+                <p><i>“Star Walk is the most beautiful stargazing app you’ve ever seen on a mobile device. It will become your interactive guide to the night sky, following your every movement in real-time and allowing you to explore over 200,000 celestial bodies with extensive information.”</i></p>
+            </div>
+            <div class="card">                
+                <h1>SkyView Lite</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/skyview-lite.jpg" alt="SkyView Lite">
+
+                <p><i>“SkyView® Lite brings stargazing to everyone! Simply point your iPhone, iPad, or iPod at the sky to identify stars, constellations, satellites, and more.”</i></p>
+            </div>
+            <div class="card">
+                <h1>The Moon – Phases Calendar</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/the-moon-phases-calendar.jpg" alt="The Moon – Phases Calendar">
+                <p><i>“Moon Phases Calendar – universal lunar calendar for any Locations from 0001AD to 2100 years.</i></p>
+
+                <p><i>The lunar calendar is one of the oldest calendars in modern society. A lunar month can only be 29 or 30 days long. This is different than a solar-based calendar, where the length is arbitrarily fixed.”</i></p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+            <div class="card">                
+                <h1>Sky Tonight </h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/03/sky-tonight-stargazing-app.jpg" alt="Sky Tonight ">
+
+                <p><i>“Made by the developers of Star Walk apps, Sky Tonight is a customizable stargazing tool that is designed for users with different needs and wants. You can adjust the constellation’s appearance, set a reminder for any space body configuration, explore the unique relative to the observer trajectory, set up a magnitude limit to filter our space objects, and much more.”</i></p>
+            </div>
+            <div class="card">                
+                <h1>ISS Detector</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/ISS-detector.jpg" alt="ISS Detector">
+
+                <p><i>“ISS Detector will tell you when and where to look for the ISS. You get an alarm a few minutes before a pass. You will never miss it. ISS Detector will also check if the weather conditions are right. A clear sky is perfect for spotting.”</i></p>
+            </div>
+            <div class="card">
+                <h1>NightShift: Stargazing & Astronomy</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/03/nightshift-stargazing-app-545x412.jpg" alt="NightShift: Stargazing & Astronomy">
+                <p><i>“Nightshift is the ideal free night sky app for the experienced amateur astronomer as well as the casual stargazer. Nightshift helps you find perfect nights for stargazing, assists you in observing your favourite planets, meteor showers and deep-sky objects and keeps you up-to-date about the celestial events in tonight’s sky.”</i></p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+            <div class="card">                
+                <h1>DarkLight </h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/darklight-app.jpg" alt="DarkLight ">
+
+                <p><i>“DarkLight app allows you to use your phone as a source of light in the dark without your eyes having to adjust for light. This simple, quick and easy app allows you to analyze the lighting conditions via light sensor, and displays the information on the screen when required.”</i></p>
+            </div>
+            <div class="card">                
+                <h1>Polar Finder</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/polar-finder.jpg" alt="Polar Finder">
+
+                <p><i>“This utility helps you solve this problem by graphically showing you the current position of the Polaris. The application tracks and draws the position of the Polaris (or Octant) in real-time and also displays its hour-angle, the local sidereal time, current local time and the longitude of the place.”</i></p>
+            </div>
+            <div class="card">
+                <h1>My Aurora Forecast</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/my-aurora-forecast.jpg" alt="My Aurora Forecast">
+                <p><i>“My Aurora Forecast is the best app for seeing the Northern Lights in Canada and the rest of the world. Built with a sleek dark design, it appeals to both tourists and serious aurora watchers by telling you what you want to know – whether that is exactly how likely you are to see the aurora borealis or details about the solar winds and high-resolution sun imagery. With this app, you’ll be seeing the Northern Lights in no time.”</i></p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="container-2">
+            <div class="card-2">                
+                <h1>Heavens-Above </h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/heavens-above.jpg" alt="Heavens-Above ">
+
+                <p><i>“When can I see the ISS? What’s that light in the sky? The official Heavens-Above app provides you with precise pass predictions for the ISS, visible satellites and radio satellites.”</i></p>
+            </div>
+            </div>
+            <div class="container-3">
+            <div class="card-3">                
+                <h1>DSO Planner Pro</h1>
+                <img src="https://astrobackyard.com/wp-content/uploads/2020/04/DSO-planner-pro.jpg" alt="DSO Planner Pro">
+
+                <p><i>“DSO Planner is an astronomy observation planning tool with excellent star charting capabilities made by active and experienced amateur observers with a passion for visual observations. It has large integrated deep sky objects databases and provides an opportunity to create any number of user own object databases.”</i></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by [ Ryo ] | © 2023</p>
+    </footer>
+</body>
+
+</html>

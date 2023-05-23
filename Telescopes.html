@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Telescopes</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+		body {
+			background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+			background-repeat: repeat;
+			background-position: center center;
+			background-attachment: fixed;
+		}
+
+		body::after {
+			content: "";
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+			background-repeat: repeat;
+			background-position: center center;
+			z-index: -1;
+			filter: brightness(0.2);
+		}
+
+		nav {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		nav li {
+			float: right;
+		}
+
+		nav li .navi {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		nav li .navi:hover {
+			background-color: #111;
+		}
+
+		.logo {
+			float: left;
+			width: 45px;
+			height: 45px;
+			margin-right: 20px;
+			border: 2px solid gray;
+			filter: grayscale(50%);
+			border-radius: 50%;
+
+		}
+
+		header {
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+			color: #fff;
+		}
+
+		main {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		.grid {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -20px;
+		}
+
+		.card {
+			background-color: #1c1c1c;
+			flex: 1;
+			padding: 50px;
+			border-radius: 5px;
+			margin: 0px 20px 20px 0px;
+			box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+			transition: all 0.3s ease;
+		}
+
+		.card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.2);
+		}
+
+		.card-img {
+			height: 500px;
+			overflow: hidden;
+		}
+
+		.card-img img {
+			width: 750px;
+			height: auto;
+			border-radius: 5px;
+		}
+
+		.card-body {
+			padding: 20px;
+		}
+
+		.card-body h2 {
+			text-align: center;
+		}
+
+		.card-body p {
+			text-align: justify;
+		}
+
+		h2 {
+			font-size: 24px;
+			margin-top: 0;
+		}
+
+		p {
+			line-height: 1.5;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #444;
+			color: #fff;
+			border-radius: 5px;
+			text-decoration: none;
+			transition: all 0.3s ease;
+		}
+
+		.btn:hover {
+			background-color: #333;
+		}
+
+		footer {
+			padding: 20px;
+			text-align: center;
+		}
+
+		footer p {
+			font-size: 14px;
+			color: #cccccc;
+			text-align: center;
+		}
+
+		@media (max-width: 768px) {
+			.grid {
+				flex-direction: column;
+			}
+
+			.card {
+				margin-right: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<div class="logo">
+			<img class="logo" src="logo.jpg" alt="Astronomy Webpage Logo">
+		</div>
+		<ul>
+			<li><a class="navi" href="About.html">About</a></li>
+			<li><a class="navi" href="Telescopes.html">Telescopes</a></li>
+			<li><a class="navi" href="Galaxies.html">Galaxies</a></li>
+			<li><a class="navi" href="Stars.html">Stars</a></li>
+			<li><a class="navi" href="SolarSystem.html">Solar System</a></li>
+			<li><a class="navi" href="News.html">News</a></li>
+			<li><a class="navi" href="ProjectWebsite.html">Home</a></li>
+		</ul>
+	</nav>
+	<header>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1>Telescopes</h1>
+	</header>
+		<main>
+			<section class="grid">
+				<div class="card">
+					<div class="card-img">
+						<img src="https://cdn.shopify.com/s/files/1/1935/4371/products/22020_Advanced_VX_6_Refractor_1_570x380@2x.jpg?v=1554218471"
+							alt="Telescope">
+					</div>
+					<div class="card-body">
+						<h2>Refracting Telescopes</h2>
+						<p>Also known as "dioptric telescopes," these telescopes use lenses to bend and focus light to
+							create an image. Examples include the classic Galilean and Keplerian telescopes, and the modern
+							Meade Infinity 102mm Altazimuth Refractor.</p>
+					</div>
+				</div>
+			</section>
+			<section class="grid">
+				<div class="card">
+					<div class="card-img">
+						<img src="https://images.immediate.co.uk/production/volatile/sites/25/2019/02/Celestron-Omni-XLT-AZ-102-0dec40b.jpg?quality=90&webp=true&resize=1000,667"
+							alt="Telescope">
+					</div>
+					<div class="card-body">
+						<h2>Reflecting Telescopes</h2>
+						<p>Also known as "catoptric telescopes," these telescopes use mirrors to collect and focus light to
+							create an image. Examples include the Newtonian telescope and the Ritchey-Chretien telescope.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="grid">
+				<div class="card">
+					<div class="card-img">
+						<img src="https://www.astroshop.eu/Produktbilder/zoom/52286_2/Celestron-Schmidt-Cassegrain-telescope-SC-279-2800-EdgeHD-1100-CGEM-II-GoTo.jpg"
+							alt="Telescope">
+					</div>
+					<div class="card-body">
+						<h2>Cassegrain Telescopes</h2>
+						<p>These telescopes use a combination of mirrors and lenses to create an image. Examples include the
+							Schmidt-Cassegrain telescope and the Maksutov-Cassegrain telescope.</p>
+					</div>
+				</div>
+			</section>
+			<section class="grid">
+				<div class="card">
+					<div class="card-img">
+						<img src="https://www.sirius-optics.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/-/8-inch-dob.jpg"
+							alt="Telescope">
+					</div>
+					<div class="card-body">
+						<h2>Dobsonian Telescopes</h2>
+						<p>These are a type of reflecting telescope that is mounted on a simple, sturdy base. They are often
+							quite large and offer a lot of light-gathering power for their price. Examples include the
+							Sky-Watcher Dobsonian Telescope and the Orion SkyQuest XT8 Classic Dobsonian Telescope.</p>
+					</div>
+				</div>
+			</section>
+			<section class="grid">
+				<div class="card">
+					<div class="card-img">
+						<img src="https://cdn11.bigcommerce.com/s-90kz6nkx71/images/stencil/590x590/products/907/20992/Celestron-Advanced-VX-9-25-inch-EdgeHD-Telescope-12033-2__89750.1594230341.jpg?c=1"
+							alt="Telescope">
+					</div>
+					<div class="card-body">
+						<h2>Catadioptric Telescopes </h2>
+						<p>These telescopes use both mirrors and lenses to create an image. Examples include the
+							Schmidt-Cassegrain telescope, the Maksutov-Cassegrain telescope, and the Schmidt-Newtonian
+							telescope.</p>
+					</div>
+				</div>
+			</section>
+			<section class="grid">
+				<div class="card">
+					<div class="card-img">
+						<img src="https://w0.peakpx.com/wallpaper/139/75/HD-wallpaper-very-large-array-vla-radio-telescope-in-new-mexico-vla-radio-telescope-radio-astronomy-new-mexico.jpg"
+							alt="Telescope">
+					</div>
+					<div class="card-body">
+						<h2>Radio Telescopes</h2>
+						<p>These telescopes use a dish or array of dishes to collect and focus radio waves emitted by
+							celestial objects. Examples include the Very Large Array and the Atacama Large Millimeter Array
+							(ALMA).</p>
+					</div>
+				</div>
+			</section>
+			<section class="grid">
+				<div class="card">
+					<div class="card-img">
+						<img src="https://images.newscientist.com/wp-content/uploads/2019/06/14160153/kgae4e.jpg?width=1200"
+							alt="Telescope">
+					</div>
+					<div class="card-body">
+						<h2>Space Telescopes</h2>
+						<p>These telescopes are placed in orbit around the Earth or beyond to observe the Universe without
+							the interference of the Earth's atmosphere. Examples include the Hubble Space Telescope, the
+							Chandra X-ray Observatory, and the James Webb Space Telescope </p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+	<footer>
+		<p>Created by [ Ryo ] | © 2023</p>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Galaxies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        body {
+            background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+            background-repeat: repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        body::after {
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+            background-repeat: repeat;
+            background-position: center center;
+            z-index: -1;
+            filter: brightness(0.2);
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 20px 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: right;
+        }
+
+        nav li .navi {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li .navi:hover {
+            background-color: #111;
+        }
+
+        .logo {
+            float: left;
+            width: 45px;
+            height: 45px;
+            margin-right: 20px;
+            border: 2px solid gray;
+            filter: grayscale(50%);
+            border-radius: 50%;
+
+        }
+
+        header {
+            background-color: #000;
+            padding: 5px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 20px;
+            color: #fff;
+        }
+
+        main {
+            margin: 0px 20px 20px 0px;
+            padding: 20px;
+        }
+
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .galaxies h2 {
+            text-align: center;
+        }
+
+        .galaxies p {
+            text-indent: 2em;
+            text-align: justify;
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        .rightcolumn {
+            float: right;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        .rightcolumn h2 {
+            text-align: center;
+        }
+
+        .rightcolumn h3 {
+            text-align: center;
+        }
+
+        .rightcolumn p {
+            text-align: justify;
+        }
+
+        .fakeimg {
+            width: 75%;
+            height: 400px;
+            border-radius: 5px;
+            padding: 20px;
+
+        }
+
+        .glxy-img {
+            width: 100%;
+            height: 150px;
+            padding: 5px;
+            margin-top: 5px;
+            transition: transform .2s;
+        }
+
+        .glxy-img:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+        }
+
+
+
+        .card {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .leftcolumn h2 {
+            text-align: left;
+        }
+
+        .leftcolumn p {
+            text-align: justify;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        footer {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #cccccc;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img class="logo" src="logo.jpg" alt="Astronomy Webpage Logo">
+        </div>
+        <ul>
+            <li><a class="navi" href="About.html">About</a></li>
+            <li><a class="navi" href="Telescopes.html">Telescopes</a></li>
+            <li><a class="navi" href="Galaxies.html">Galaxies</a></li>
+            <li><a class="navi" href="Stars.html">Stars</a></li>
+            <li><a class="navi" href="SolarSystem.html">Solar System</a></li>
+            <li><a class="navi" href="News.html ">News</a></li>
+            <li><a class="navi" href="ProjectWebsite.html">Home</a></li>
+        </ul>
+    </nav>
+    <header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Galaxies — Astronomy</h1>
+    </header>
+    <main>
+        <div class="galaxies">
+            <h2>Galaxies</h2>
+            <p>Galaxies are vast systems of stars, gas, dust, and dark matter that are held together by gravity. They
+                come in a variety of shapes and sizes, ranging from small, irregularly shaped dwarf galaxies to massive,
+                spiral and elliptical galaxies that can contain billions of stars.</p>
+
+            <p>The most common type of galaxy is the spiral galaxy, which has a flattened disk shape and spiral arms
+                that contain most of the galaxy's stars, gas, and dust. Spiral galaxies also have a central bulge that
+                contains a dense concentration of stars and often a supermassive black hole at its center. Examples of
+                spiral galaxies include our Milky Way and the Andromeda Galaxy.Elliptical galaxies, on the other hand,
+                are more spherically shaped and contain mostly old, red stars. They lack the spiral arms and disk
+                structure of spiral galaxies and are often found in galaxy clusters, where they can be the largest and
+                most massive members.
+                Irregular galaxies, as the name suggests, have irregular shapes and lack the clear structure of spiral
+                and elliptical galaxies. They can contain large amounts of gas and dust and are often the site of active
+                star formation.</p>
+
+            <p>Galaxies are not static objects; they can interact and collide with each other, causing gravitational
+                disturbances that can lead to the formation of new stars and structures. The study of galaxies is an
+                important area of astrophysics, as it can shed light on the history and evolution of the universe and
+                the processes that govern the formation and behavior of galaxies.</p>
+        </div>
+
+    </main>
+    <br>
+    <main>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Milky Way Galaxy</h2>
+                    <h5>The Milky Way Galaxy: A Vast and Diverse Home to Billions of Stars and Planets</h5>
+                    <img class="fakeimg" src="https://media.tenor.com/KgcSe5_KkqkAAAAd/milky-way-national-space-day.gif"
+                        alt="Milky Way Galaxy">
+                    <p>The Milky Way is a barred spiral galaxy that contains billions of stars, gas, dust, and dark
+                        matter. It is one of the most studied and well-known galaxies in the universe, as it is also the
+                        home of our own Solar System.</p>
+
+                    <p> The Milky Way is approximately 100,000 light-years in diameter and contains between 100 and 400
+                        billion stars. It has a central bulge and a flattened disk structure with spiral arms that
+                        extend outwards. The disk contains young, hot stars and interstellar gas and dust, while the
+                        bulge is made up of older, cooler stars.</p>
+
+
+                    <p>In addition to its stars, the Milky Way is also believed to contain a large amount of dark
+                        matter, a mysterious substance that does not emit, absorb, or reflect light but can be detected
+                        through its gravitational effects. Dark matter is thought to make up about 85% of the total
+                        matter in the universe.
+
+                        The Milky Way is also home to a number of interesting objects and phenomena, such as star
+                        clusters, nebulae, pulsars, and black holes. It is also the site of ongoing star formation, as
+                        well as the occasional supernova explosion.</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About</h2>
+                    <p>The Milky Way is a vast barred spiral galaxy that contains billions of stars, dark matter, and
+                        other celestial objects.</p>
+                </div>
+                <div class="card">
+                    <h3>More Images</h3>
+                    <img class="glxy-img" src="https://exoplanets.nasa.gov/internal_resources/698" alt="Popular Post 1">
+                    <img class="glxy-img"
+                        src="https://universe.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBazhEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9e81fc898e7b5813c41c9226df08eec4b5a98450/ssc2006-02a_0.jpg?disposition=attachment"
+                        alt="Popular Post 2">
+                    <img class="glxy-img"
+                        src="https://www.nasa.gov/sites/default/files/thumbnails/image/hubbleimage1p1611a1r.jpg"
+                        alt="Popular Post 3">
+                </div>
+            </div>
+    </main>
+    <div class="divider"></div>
+    <main>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Andromeda Galaxy </h2>
+                    <h5>The Andromeda Galaxy: A Spiral Neighbor of the Milky Way</h5>
+                    <img class="fakeimg" src="https://media.tenor.com/XqVhAiPc7VYAAAAC/via-lactea-milky-way.gif"
+                        alt="Andromeda Galaxy">
+                    <p>The Andromeda Galaxy, also known as Messier 31, is a majestic spiral galaxy located approximately
+                        2.5 million light-years away from Earth in the constellation Andromeda. It is the closest galaxy
+                        to our Milky Way and is one of the most studied and well-known galaxies in the universe.</p>
+
+                    <p>Andromeda is a massive galaxy, with a diameter of around 220,000 light-years, making it
+                        approximately 2.5 times larger than our Milky Way. It contains an estimated one trillion stars,
+                        many of which are similar to our Sun. Andromeda is also surrounded by a vast halo of hot gas and
+                        dark matter, which gives the galaxy its characteristic gravitational influence.</p>
+
+                    <p>Andromeda is often visible to the naked eye as a faint, hazy patch in the night sky, and is a
+                        popular target for amateur astronomers and astrophotographers. Its proximity and size make it an
+                        important target for scientific research, and it has been the subject of numerous studies and
+                        observations across the electromagnetic spectrum.</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About</h2>
+                    The Andromeda Galaxy is a spiral galaxy located approximately 2.5 million light-years away from
+                    Earth and is one of the closest and most extensively studied galaxies outside of the Milky Way.</p>
+                </div>
+                <div class="card">
+                    <h3>More Images</h3>
+                    <img class="glxy-img"
+                        src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/potw1706a.jpg"
+                        alt="Popular Post 1">
+                    <img class="glxy-img"
+                        src="https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/hs-2015-02-a-hires_jpg.jpg?itok=4kp8-S8y"
+                        alt="Popular Post 2">
+                    <img class="glxy-img"
+                        src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/andromeda.jpg"
+                        alt="Popular Post 3">
+                </div>
+            </div>
+    </main>
+    <div class="divider"></div>
+    <main>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>M87 Galaxy </h2>
+                    <h5>M87 Galaxy: A Behemoth in the Virgo Cluster with a Supermassive Black Hole</h5>
+                    <img class="fakeimg"
+                        src="https://64.media.tumblr.com/2558b7373c95a579ed5c4e092310e87e/tumblr_ppsfbcz8qp1qendyvo1_400.gif"
+                        alt="M87 Galaxy`">
+                    <p>M87 is a giant elliptical galaxy located in the Virgo Cluster of galaxies, approximately 55
+                        million light-years from Earth. It is one of the largest and most massive galaxies known,
+                        containing billions of stars and a supermassive black hole at its center.</p>
+
+                    <p>The black hole in M87 is one of the most studied and well-known black holes in the universe, with
+                        a mass estimated to be around 6.5 billion times that of the Sun. It is surrounded by a disk of
+                        hot, ionized gas and produces a powerful jet of relativistic particles that extends for
+                        thousands of light-years into space.</p>
+
+                    <p>M87 is also notable for its bright and extended halo of diffuse gas, dust, and stars, which is
+                        thought to have formed through a combination of mergers with other galaxies and the stripping of
+                        gas from its own stars.</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About</h2>
+                    <p>
+                        M87 is a massive elliptical galaxy located in the constellation Virgo, and is notable for
+                        containing one of the most massive black holes ever observed.</p>
+                </div>
+                <div class="card">
+                    <h3>More Images</h3>
+                    <img class="glxy-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/opo9207a.jpg"
+                        alt="Popular Post 1">
+                    <img class="glxy-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/opo9423a.jpg"
+                        alt="Popular Post 2">
+                    <img class="glxy-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic0815j.jpg"
+                        alt="Popular Post 3">
+                </div>
+            </div>
+    </main>
+    <div class="divider"></div>
+    <main>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Large Magellanic Cloud </h2>
+                    <h5>The Large Magellanic Cloud: A Satellite Galaxy with Stellar Surprises</h5>
+                    <img class="fakeimg" src="https://media.tenor.com/f1VXZyg629cAAAAd/paglachoda.gif"
+                        alt="Large Magellanic Cloud`">
+                    <p>The Large Magellanic Cloud is a small galaxy that is located about 163,000 light years away from
+                        Earth in the southern constellation of Dorado. It is a satellite galaxy of our Milky Way and is
+                        part of the Local Group of galaxies that also includes the Andromeda Galaxy and the Small
+                        Magellanic Cloud.</p>
+
+                    <p>The Large Magellanic Cloud is irregular in shape and is approximately 14,000 light years in
+                        diameter, making it about one-tenth the size of the Milky Way. It contains a relatively high
+                        amount of gas and dust, which has led to a high rate of star formation, with young, massive
+                        stars being born at a much higher rate than in our Milky Way.</p>
+
+                    <p>The Large Magellanic Cloud is also home to a number of interesting objects, including the
+                        Tarantula Nebula, one of the largest and brightest emission nebulae known. This nebula is a
+                        region of intense star formation and contains some of the most massive stars known.</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About </h2>
+                    <p>
+                        The Large Magellanic Cloud is a dwarf galaxy located approximately 160,000 light-years away from
+                        Earth that contains active star-forming regions, supernova remnants, and other astronomical
+                        phenomena.</p>
+                </div>
+                <div class="card">
+                    <h3>More Images</h3>
+                    <img class="glxy-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic0411d.jpg"
+                        alt="Popular Post 1">
+                    <img class="glxy-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/potw1441a.jpg"
+                        alt="Popular Post 2">
+                    <img class="glxy-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic1105a.jpg"
+                        alt="Popular Post 3">
+                </div>
+            </div>
+    </main>
+    <div class="divider"></div>
+    <main>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Small Magellanic Cloud </h2>
+                    <h5>The Small Magellanic Cloud: A Tiny, Irregular Galaxy with Surprising Cosmic Significance</h5>
+                    <img class="fakeimg"
+                        src="https://64.media.tumblr.com/c6545bcfc8e3d140b7ae8c425b334c7d/tumblr_n77fh3IEoO1rnq3cto1_500.gifv"
+                        alt="Small Magellanic Cloud">
+                    <p>The Small Magellanic Cloud is a dwarf galaxy that orbits around the Milky Way Galaxy. It is
+                        located in the constellation Tucana and is one of the closest galaxies to our own, with a
+                        distance of approximately 200,000 light-years away.</p>
+
+                    <p>The Small Magellanic Cloud is classified as an irregular dwarf galaxy due to its shape, which
+                        lacks the clear spiral or elliptical structure of larger galaxies. It contains several hundred
+                        million stars and has a diameter of approximately 7,000 light-years, making it much smaller than
+                        the Milky Way.</p>
+
+                    <p>Despite its small size, the Small Magellanic Cloud is a rich source of astronomical discoveries.
+                        It contains a number of star-forming regions, including the famous Tarantula Nebula, which is
+                        one of the largest and most active star-forming regions known in the Local Group of galaxies.
+                        The Small Magellanic Cloud also contains a variety of other astronomical objects, including
+                        supernova remnants, globular clusters, and planetary nebulae.</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About </h2>
+                    <p>The Small Magellanic Cloud is a dwarf galaxy located about 200,000 light-years from Earth that is
+                        a satellite of the Milky Way and contains regions of active star formation.</p>
+                </div>
+                <div class="card">
+                    <h3>More Images</h3>
+                    <img class="glxy-img" src="https://cdn.spacetelescope.org/archives/images/screen/heic0603d.jpg"
+                        alt="Popular Post 1">
+                    <img class="glxy-img"
+                        src="https://static.wikia.nocookie.net/space/images/9/94/Cloud.jpg/revision/latest?cb=20140321004714"
+                        alt="Popular Post 2">
+                    <img class="glxy-img"
+                        src="https://www.universetoday.com/wp-content/uploads/2023/01/Webb_inspects_NGC_346-m-2000x1200.jpg"
+                        alt="Popular Post 3">
+                </div>
+            </div>
+    </main>
+    <div class="divider"></div>
+    <main>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Sombrero Galaxy </h2>
+                    <h5>The Sombrero Galaxy: A Majestic Spiral Galaxy with a Unique Appearance and Mysterious Past</h5>
+                    <img class="fakeimg"
+                        src="https://thumbs.gfycat.com/LividUntidyAcouchi-max-1mb.gif"
+                        alt="Sombrero Galaxy">
+                    <p>The Sombrero Galaxy, also known as Messier 104 or NGC 4594, is a striking galaxy located approximately 28 million light-years away in the constellation Virgo. The galaxy is named after its distinctive appearance, which resembles a sombrero hat with a broad, dark band of dust and gas encircling its bulging center.</p>
+
+                    <p>The Sombrero Galaxy is classified as a lenticular galaxy, which means that it has a central bulge and a disk of stars and gas, but lacks the spiral arms of a typical spiral galaxy. It is one of the largest lenticular galaxies known, with a diameter of about 50,000 light-years, and it contains billions of stars.</p>
+                        
+                    <p>The galaxy is also notable for its active galactic nucleus, which is thought to contain a supermassive black hole with a mass estimated to be about 1 billion times that of the Sun. This black hole is surrounded by a bright accretion disk that emits intense radiation across the electromagnetic spectrum.</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About</h2>
+                    <p>
+                        The Sombrero Galaxy, also known as Messier 104, is a massive spiral galaxy located approximately 28 million light-years away from Earth, distinguished by its prominent dust lane and bulge of older stars.</p>
+                </div>
+                <div class="card">
+                    <h3>More Images</h3>
+                    <img class="glxy-img" src="https://cdn.mos.cms.futurecdn.net/MwAtZXejfyLn75472eoVbE-1200-80.jpg" alt="Popular Post 1">
+                    <img class="glxy-img" src="https://e0.pxfuel.com/wallpapers/169/160/desktop-wallpaper-sombrero-galaxy-in-2020-sombrero-galaxy-hubble-galaxy.jpg" alt="Popular Post 2">
+                    <img class="glxy-img" src="https://scitechdaily.com/images/Little-Sombrero-Galaxy-NGC-7814-Caldwell-43-scaled.jpg" alt="Popular Post 3">
+                </div>
+            </div>
+    </main>
+    <div class="divider"></div>
+    <main>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Whirlpool Galaxy </h2>
+                    <h5>
+                        The Whirlpool Galaxy: A Stunning Spiral of Stars and Dust</h5>
+                    <img class="fakeimg"
+                        src="https://cdnb.artstation.com/p/assets/images/images/019/186/963/original/zhiroslav-kapustka-benis2.gif?1562397401"
+                        alt="Whirlpool Galaxy">
+                    <p>
+                        The Whirlpool Galaxy, also known as Messier 51 or NGC 5194, is a spiral galaxy located approximately 23 million light years away in the constellation Canes Venatici. It is one of the most famous and easily recognizable galaxies in the night sky, known for its striking spiral arms and bright core.</p>
+                        
+                        <p>The Whirlpool Galaxy is classified as a grand design spiral galaxy, which means that its spiral arms are well-defined and prominent. It is also notable for its interaction with a smaller companion galaxy, NGC 5195, which has caused gravitational disturbances that have likely contributed to the formation of the Whirlpool Galaxy's spiral structure.</p>
+                        
+                        <p>The Whirlpool Galaxy is home to a rich population of stars, including many young, hot blue stars that are located in its spiral arms. It also contains several star-forming regions, where gas and dust are being compressed and heated to form new stars.</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About</h2>
+                    <p>
+                        The Whirlpool Galaxy, also known as Messier 51, is a grand-design spiral galaxy located approximately 23 million light-years away from Earth, notable for its striking spiral arms and active star formation.</p>
+                </div>
+                <div class="card">
+                    <h3>More Images</h3>
+                    <img class="glxy-img" src="https://www.astronomy.com/~/media/7A21191AC26149239A4E7BE57CC6EF0A.jpg" alt="Popular Post 1">
+                    <img class="glxy-img" src="https://stsci-opo.org/STScI-01F4Z5BH8A9FH4FTS64BB0ZG0Z.jpg" alt="Popular Post 2">
+                    <img class="glxy-img" src="https://skyandtelescope.org/wp-content/uploads/2019-05-07_5cd1d1f7352f4_M51_S1a_Shadows_Levels_DeSat_CR_SS2050_Cos_Curves_HPF1_GE_Curves_Noise_HVLG_SS2040_Cos_s.jpg" alt="Popular Post 3">
+                </div>
+            </div>
+    </main>
+    <div class="divider"></div>
+    <main>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Tadpole Galaxy </h2>
+                    <h5>The Tadpole Galaxy: A Bizarre and Beautiful Cosmic Formation with Clues to the Formation of Stars and Galaxies</h5>
+                    <img class="fakeimg"
+                        src="https://64.media.tumblr.com/34eab42713f24159ae7c6617985db6a5/30ec3ba12f2decc0-e4/s540x810/f5601143937fb9a2367c13349ecf70806ab936ea.gif"
+                        alt="Tadpole Galaxy">
+                    <p>The Tadpole Galaxy is a stunning, elongated galaxy located approximately 420 million light-years away from Earth in the constellation Draco. It gets its name from its distinctive shape, which resembles that of a tadpole, with a bright, star-filled head and a long, curved tail.</p>
+
+                        <p>The Tadpole Galaxy is classified as an interacting galaxy, which means that it is currently undergoing a gravitational interaction with another nearby galaxy. This interaction has caused the gas and dust in the Tadpole Galaxy to be pulled and stretched, resulting in the formation of its distinctive shape and the creation of new stars.</p>
+                        
+                        <p>The galaxy has a bright central region filled with young, blue stars, and a more diffuse outer region composed of older, redder stars. The central region also contains several star-forming regions where new stars are actively being born.</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About </h2>
+                    <p>The Tadpole Galaxy is a disrupted spiral galaxy located approximately 420 million light-years away from Earth, characterized by its unusual shape resembling a tadpole and a long tail of stars and gas stretching over 280,000 light-years.</p>
+                </div>
+                <div class="card">
+                    <h3>More Images</h3>
+                    <img class="glxy-img" src="https://c4.wallpaperflare.com/wallpaper/384/102/357/tadpole-galaxy-tadpole-galaxy-wallpaper-preview.jpg" alt="Popular Post 1">
+                    <img class="glxy-img" src="https://www.astrobin.com/6odbgy/C/rawthumb/qhd/?sync" alt="Popular Post 2">
+                    <img class="glxy-img" src="https://apod.nasa.gov/apod/image/1408/arp188_hubble_960.jpg" alt="Popular Post 3">
+                </div>
+            </div>
+    </main>
+    <div class="divider"></div>
+    <main>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Cartwheel Galaxy </h2>
+                    <h5>The Cartwheel Galaxy: A Spectacular Ring-Shaped Galaxy with Clues to a Violent Cosmic Past and Future</h5>
+                    <img class="fakeimg"
+                        src="https://scitechdaily.com/images/Galaxy-NGC-2276.gif"
+                        alt="Cartwheel Galaxy">
+                    <p>
+                        The Cartwheel Galaxy is a unique and striking object located approximately 500 million light-years from Earth in the constellation Sculptor. It is a type of galaxy known as a ring galaxy, which is formed through a rare collision between two galaxies.</p>
+                        
+                        <p>The collision that formed the Cartwheel Galaxy likely occurred around 100 million years ago and involved a smaller galaxy passing through the center of a larger spiral galaxy. The gravitational forces from the collision caused ripples in the interstellar gas and dust, which eventually settled into the characteristic ring shape.</p>
+                        
+                        <p>The ring of the Cartwheel Galaxy is approximately 150,000 light-years in diameter and contains numerous bright and massive star-forming regions. These regions are believed to be triggered by the shock waves from the collision, which compress the gas and dust, leading to the formation of new stars.</p>
+                        
+                        <p>Surrounding the ring is a diffuse disk of gas and dust, which is also undergoing active star formation. The Cartwheel Galaxy also has a prominent central bulge, which contains a large number of old and reddish stars.</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About </h2>
+                    <p>The Cartwheel Galaxy is a lenticular galaxy located approximately 500 million light-years away from Earth, distinguished by its unique appearance resembling a wheel with spokes caused by a collision with a smaller galaxy.</p>
+                </div>
+                <div class="card">
+                    <h3>More Images</h3>
+                    <img class="glxy-img" src="https://askanearthspacescientist.asu.edu/sites/default/files/styles/panopoly_image_original/public/side-content/cartwheel-galaxy_0.jpg?itok=5Mut0DjW" alt="Popular Post 1">
+                    <img class="glxy-img" src="https://1721181113.rsc.cdn77.org/data/images/full/41410/ngc-2207-spiral-galaxy-light-year.jpg" alt="Popular Post 2">
+                    <img class="glxy-img" src="https://i.pinimg.com/originals/59/f8/64/59f86496740869b24c8180b3f392cc9a.jpg" alt="Popular Post 3">
+                </div>
+            </div>
+    </main>
+    <br>
+    <footer>
+        <p>Created by [Ryo] | © 2023</p>
+    </footer>
+</body>
+
+</html>

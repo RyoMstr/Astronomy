@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contentA="width=device-width, initial-scale=1.0">
+    <title>Astronomy Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        body {
+            background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+            background-repeat: repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        body::after {
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+            background-repeat: repeat;
+            background-position: center center;
+            z-index: -1;
+            filter: brightness(0.2);
+        }
+
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: right;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #111;
+        }
+
+
+        .logo {
+            float: left;
+            width: 45px;
+            height: 45px;
+            margin-right: 20px;
+            border: 2px solid gray;
+            filter: grayscale(50%);
+            border-radius: 50%;
+
+        }
+
+        header {
+            padding: 5px;
+            text-align: center;
+        }
+
+
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        main {
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100.5%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            background-color: #1c1c1c;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 30%;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #cccccc;
+            color: #ffffff;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img class="logo" src="logo.jpg" alt="Astronomy Webpage Logo">
+        </div>
+        <ul>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Telescopes.html">Telescopes</a></li>
+            <li><a href="Galaxies.html">Galaxies</a></li>
+            <li><a href="Stars.html">Stars</a></li>
+            <li><a href="SolarSystem.html">Solar System</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="ProjectWebsite.html">Home</a></li>
+        </ul>
+    </nav>
+    <header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Astronomy Webpage</h1>
+    </header>
+
+    <main>
+        <h2>Welcome to the Universe</h2>
+        <p>Astronomy is the scientific study of celestial objects, such as stars, planets, galaxies, and other phenomena
+            that originate outside the Earth's atmosphere. It is a fascinating field that has helped us learn more about
+            our place in the universe and the origins of life.</p>
+        <img src="https://wallpapercave.com/wp/wp6017306.jpg" alt="Galaxy" />
+
+        <h2>Explore the Cosmos</h2>
+        <p>There are many ways to explore the cosmos, from using telescopes to studying the radiation that comes from
+            space. Here are some resources to help you get started:</p>
+
+        <div class="container">
+            <div class="card">
+                <h3>Telescope Guide</h3>
+                <p>Learn about the different types of telescopes and how to choose the right one for your needs.</p>
+                <a href="Telescopes.html" class="button">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Astronomy Apps</h3>
+                <p>Discover some of the best apps for stargazing and exploring the night sky.</p>
+                <a href="Apps.html" class="button">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Space News</h3>
+                <p>Stay up to date with the latest news and discoveries in astronomy and space exploration.</p>
+                <a href="News.html" class="button">Learn More</a>
+            </div>
+        </div>
+
+        <h2>Amazing Facts About the Universe</h2>
+        <p>Here are some mind-blowing facts about the universe that will make you appreciate just how incredible it
+            really is:</p>
+        <ul>
+            <li>The universe is estimated to be about 13.8 billion years old.</li>
+            <li>The largest known star is 1,700 times bigger than the sun.</li>
+            <li>There are more stars in the universe than there are grains of sand on all the beaches on Earth.</li>
+            <li>Black holes are regions of space where the gravitational pull is so strong that nothing, not even light,
+                can escape.</li>
+            <li>There may be as many as 500 billion planets in our galaxy alone.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Astronomy Webpage</p>
+    </footer>
+</body>
+
+</html>

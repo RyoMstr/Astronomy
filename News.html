@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Astronomy News</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        body {
+            background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+            background-repeat: repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        body::after {
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+            background-repeat: repeat;
+            background-position: center center;
+            z-index: -1;
+            filter: brightness(0.2);
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: right;
+        }
+
+        nav li .navi {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li .navi:hover {
+            background-color: #111;
+        }
+
+        .logo {
+            float: left;
+            width: 45px;
+            height: 45px;
+            margin-right: 20px;
+            border: 2px solid gray;
+            filter: grayscale(50%);
+            border-radius: 50%;
+
+        }
+
+        h2,
+        h3 {
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        main {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .featured {
+            position: relative;
+            width: 75%;
+            float: left;
+        }
+
+        .more-news {
+            width: 25%;
+            float: right;
+
+        }
+
+        .more-news img:hover {
+            opacity: .2;
+        }
+
+        .featured img {
+            max-width: 100%;
+        }
+
+        .article {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .article a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .article a:hover {
+            text-decoration: underline;
+        }
+
+        .article h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .article h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .article h3 {
+            font-weight: lighter;
+            font-size: medium;
+            text-align: center;
+        }
+
+        .article p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+            text-align: justify;
+        }
+
+        .article img {
+            width: 100%;
+            position: static;
+        }
+
+        .more-news h1 {
+            font-size: 38px;
+            text-align: center;
+        }
+
+        .article:nth-child(odd) {
+            position: relative;
+            left: -20px;
+        }
+
+        .article:nth-child(even) {
+            position: relative;
+            right: -20px;
+        }
+
+        .more-news .article a {
+            color: #fff;
+        }
+
+        .more-news .article a:hover {
+            color: #0066cc;
+            opacity: .5;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #cccccc;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img class="logo" src="logo.jpg" alt="Astronomy Webpage Logo">
+        </div>
+        <ul>
+            <li><a class="navi" href="About.html">About</a></li>
+            <li><a class="navi" href="Telescopes.html">Telescopes</a></li>
+            <li><a class="navi" href="Galaxies.html">Galaxies</a></li>
+            <li><a class="navi" href="Stars.html">Stars</a></li>
+            <li><a class="navi" href="SolarSystem.html">Solar System</a></li>
+            <li><a class="navi" href="News.html">News</a></li>
+            <li><a class="navi" href="ProjectWebsite.html">Home</a></li>
+        </ul>
+    </nav>
+
+
+    <header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Astronomy News</h1>
+    </header>
+    <main>
+        <section class="featured">
+            <div class="article">
+
+                <h1>The biggest space missions to look out for in 2023</h1>
+                <h3><i>While humans won’t be heading back to the Moon until 2025, there’s plenty to get excited about
+                        this year.</i></h3>
+                <h6>By<a href="https://astronomy.com/authors/mac-stone" target="_blank"> Mac Stone</a> | Published:
+                    Wednesday, January 11, 2023</h6>
+                <img src="https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/EarthriseontheMoon.jpg?resize=600%2C394"
+                    alt="News">
+                <p>With just how exciting 2022 was when it came to space news — from the reveal of the<a
+                        href="https://astronomy.com/news/2022/07/nasa-delivers-first-batch-of-images-from-james-webb-space-telescope"
+                        target="_blank"> first images taken the James Webb Space Telescope</a> to<a
+                        href="https://astronomy.com/news/2022/09/nasa-crashed-a-spacecraft-into-an-asteroid-here-are-the-last-images-of-the-successful-dart-mission"
+                        target="_blank"> NASA crashing the DART spacecraft into an asteroid</a> — it may seem like 2023
+                    will be quiet in comparison.</p>
+                <br>
+                <p>However, that’s not the case. From expeditions throughout the solar system to new breakthroughs in
+                    commercial space travel, here are the biggest space missions to keep an eye on throughout 2023.</p>
+                <br>
+                <br>
+                <h2>1. Asteroid Bennu samples return to Earth</h2>
+                <br>
+                <p>Way back in 2016, NASA launched its<a
+                        href="https://astronomy.com/news/2020/10/osiris-rex-is-literally-overflowing-with-asteroid-samples-from-bennu"
+                        target="_blank"> OSIRIS-REx mission</a>. The craft arrived at the asteroid Bennu in October 2020
+                    to collect rock samples. OSIRIS-REx is estimated to return to Earth with the samples on Sept. 24,
+                    2023, though that date could change as the year progresses.</p>
+                <br>
+                <img src="https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/osirisrextag.jpg?resize=600%2C424"
+                    alt="News">
+                <h6>OSIRIS-REx's touch-and-go sample collection attempt on asteroid Bennu is seen in this image.</h6>
+                <br>
+                <p>Bennu is a small asteroid compared to others in the solar system, as it is about as wide as the
+                    Empire State Building is tall (around 1,450 feet [500 meters]). Of note, it has a 1-in-1,750 chance
+                    of hitting Earth on one of its close approaches to Earth in the late 22nd century,<a
+                        href="https://solarsystem.nasa.gov/asteroids-comets-and-meteors/asteroids/101955-bennu/overview/"
+                        target="_blank"> according to NASA</a>.</p>
+                <br>
+                <p>However, those aren’t the reasons that scientists are studying Bennu. Rather, Bennu was selected
+                    because of its age. The asteroid has been around for more than 4.5 billion years, and its
+                    present-day composition was likely established within 10 million years of our solar system’s
+                    formation. This makes it a great candidate for studying what the early solar system might have been
+                    like.</p>
+                <br>
+                <br>
+                <h2>2. SpaceX and Boeing send humans to space</h2>
+                <br>
+                <p>As 2023 rolls around, Boeing and SpaceX will continue to compete to launch humans into Space as a
+                    part of<a href="https://www.nasa.gov/exploration/commercial/crew/index.html" target="_blank"> NASA’s
+                        Commercial Crew Program</a> (CCP). In February,<a
+                        href="https://www.nasa.gov/content/nasa-s-spacex-crew-6-launch/#.ZGB96U9BxhF" target="_blank">
+                        SpaceX will attempt</a> its sixth launch for the CCP, sending four astronauts to the
+                    International Space Station.</p>
+                <br>
+                <img src="https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/crewdragon.jpg?resize=600%2C400"
+                    alt="News">
+                <h6>SpaceX's Crew Dragon capsule, seen here, has already proven its worth. Boeing's Starliner craft,
+                    meanwhile, aims to make up lost ground this year.</h6>
+                <br>
+                <p>Boeing, meanwhile, has lagged behind SpaceX a bit in terms of launches, but will be attempting the
+                    first crewed launch of its Starliner craft, including two NASA astronauts, as a part of NASA’s CCP
+                    in April.<a href="https://www.foxweather.com/earth-space/2023-space-exploration-milestones"
+                        target="_blank"> This launch will mark</a> the final test that Boeing needs to pass before it
+                    can
+                    use the Starliner to regularly send astronauts to the ISS.</p>
+                <br>
+                <br>
+                <h2>3. Multiple countries shoot for the Moon</h2>
+                <br>
+                <p>Russia hasn’t sent a probe to the surface of the Moon since Luna 24 in 1976, but that isn’t stopping
+                    it from going back. As of late 2022, Russia is now planning on<a
+                        href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=LUNA-25" target="_blank">
+                        launching their Luna 25 lander in
+                        2023</a>. The craft will attempt to land near Boguslawsky crater in the Moon’s south polar
+                    region to
+                    study components of the<a
+                        href="https://www.esa.int/ESA_Multimedia/Images/2021/09/Ten_things_you_didn_t_know_about_the_Moon_Atmosphere"
+                        target="_blank"> lunar polar exosphere</a>.</p>
+                <br>
+                <p>Closer to the equator, India aims to launch its third lunar mission in mid- to late-2023. The
+                    Chandrayaan 3 launch was originally slated for August 2022, but was pushed back to complete more
+                    vital tests. If successful,<a
+                        href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=CHANDRYN3" target="_blank">
+                        Chandrayaan 3</a> will land in the highlands near the south pole of the
+                    Moon.</p>
+                <br>
+                <img src="https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Chandrayaan3lander.jpg?resize=600%2C331"
+                    alt="News">
+                <br>
+                <p>Finally, two lunar landers will launch from the U.S. in 2023. Houston-based company<a
+                        href="https://www.intuitivemachines.com/" target="_blank"> Intuitive
+                        Machines’ Nova-C</a> craft will take off in March 2023. If successful, it will become the first
+                    U.S.
+                    spacecraft to land on the Moon since<a
+                        href="https://astronomy.com/magazine/news/2022/12/apollo-17-nasas-last-mission-to-the-moon"
+                        target="_blank"> Apollo 17 in 1972</a>. Meanwhile,<a href="https://www.astrobotic.com/"
+                        target="_blank"> Astrobotic Technology</a>’s<a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=PEREGRN-1" target="_blank">
+                        Peregrine Lunar Lander</a> is tentatively scheduled to touch down on the Moon’s surface in the
+                    first quarter of
+                    2023. The Peregrine’s primary mission objectives will to be study the Moon’s exosphere, magnetic
+                    fields and other characteristics.</p>
+                <br>
+                <br>
+                <h2>4. Europe’s JUICE Mission to Europa (and more)</h2>
+                <br>
+                <p>In April 2023, the European Space Agency will send their<a
+                        href="https://www.esa.int/Science_Exploration/Space_Science/Juice" target="_blank"> Jupiter Icy
+                        Moons Explorer</a>, or JUICE, off to
+                    Jupiter. Upon entering orbit around Jupiter in 2031, JUICE will make detailed observations of the
+                    gas giant’s three large ocean-bearing moons:<a href="https://astronomy.com/news/2018/10/ganymede-has-earthlike-faults" target="_blank">
+                        Ganymede</a>,<a href="https://astronomy.com/magazine/2019/08/how-we-might-find-life-on-europa" target="_blank">
+                            Europa</a>  and<a href="https://astronomy.com/news/2020/05/astronomers-recreate-the-formation-of-jupiters-galilean-moons-using-new-theory" target="_blank">
+                                Callisto</a>. These observations will
+                    allow astronomers to study the three moons, as well as Jupiter’s environment, in unprecedented
+                    detail.</p>
+                <br>
+                <img src="https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/Juicemission.jpg?resize=600%2C339"
+                    alt="News">
+                <br>
+                <p>JUICE will fly by Ganymede and Callisto at least 12 times each, and Europa at least twice. In the
+                    final phase of its projected two-year mission,<a href="https://www.planetary.org/space-missions/juice#:~:text=JUICE%20is%20planned%20to%20launch,miles" target="_blank">
+                        JUICE will orbit around Ganymede for about nine
+                    months</a>  of the icy moons, studying the moon even more closely. This will mark the first time a
+                    spacecraft has orbited around another moon in the solar system other than our own Moon.</p>
+                <br>
+                <br>
+                <h2>5. SpaceX sends its Starship spacecraft to Orbit</h2>
+                <br>
+                <p>Over the past few years, SpaceX has made a name for itself in the aerospace industry. Now, the
+                    company is going to try and make even more history</p>
+                <br>
+                <p>Sometime in early 2023, either late February or March, SpaceX will attempt to use its Super Heavy
+                    first-stage rocket booster to launch its second-stage spacecraft,<a href="https://www.spacex.com/vehicles/starship/" target="_blank"> Starship</a>, into orbit. The two are
+                    collectively referred to as “Starship,” and the company plans to use them in the future as a fully
+                    reusable transportation system for both cargo and humans, according to SpaceX.</p>
+                <br>
+                <img src="https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/StarshipSpaceX.jpg?resize=600%2C338"
+                    alt="News">
+                <br>
+                <p>The company has planned several uses for Starship, including delivering satellites into Earth’s orbit
+                    and landing cargo and crew on the Moon and Mars. Launching Starship into orbit around Earth is just
+                    the first test to see if it can handle those future tasks.</p>
+                <br>
+                <p>So, whether it’s with intent or by accident, when you look up in the stars in 2023, you may be
+                    witnessing a breakthrough in space exploration.</p>
+
+            </div>
+        </section>
+
+        <section class="more-news">
+            <h1>Latest News</h1>
+
+            <div class="article">
+                <img class="latest" src="https://cdn.mos.cms.futurecdn.net/YMaNupmWJoGqErtH4aENRA-1200-80.jpg.webp"
+                    alt="Black Hole">
+                <h3><a href="Boom! Astronomers just watched the largest explosion in space rage for 3 years.html"
+                        target="_blank">Boom! Astronomers just watched the largest explosion in space rage for 3
+                        years</a></h3>
+            </div>
+
+            <div class="article">
+                <img class="latest" src="https://cdn.mos.cms.futurecdn.net/QtmswQnZ4boibfxv4bmbpP-1200-80.jpg.webp"
+                    alt="Mars">
+                <h3><a href="1 million cosmic baby pictures form a vast star atlas for astronomers.html"
+                        target="_blank">1 million cosmic baby pictures form a vast star atlas for astronomers</a></h3>
+            </div>
+
+            <div class="article">
+                <img class="latest" src="https://cdn.mos.cms.futurecdn.net/tw54BFgLvP8q9xFsUuhCon-1200-80.jpg.webp"
+                    alt="Galaxy">
+                <h3><a href="Black hole shreds star in a cosmic feeding frenzy that has astronomers thrilled.html"
+                        target="_blank">Black hole shreds star in a cosmic feeding frenzy that has astronomers
+                        thrilled</a></h3>
+            </div>
+
+            <div class="article">
+                <img class="latest" src="https://cdn.mos.cms.futurecdn.net/92AL6mKYhZtNhrhcQxSb2V-1200-80.jpeg.webp"
+                    alt="Jupiter">
+                <h3><a href="How fast is the universe expanding, New supernova data could help nail it down.html"
+                        target="_blank">How fast is the universe expanding? New supernova data could help nail it
+                        down</a></h3>
+            </div>
+
+            <div class="article">
+                <img class="latest" src="https://cdn.mos.cms.futurecdn.net/bW6aKvJRKUoA6n3zusBjwk-1200-80.jpg.webp"
+                    alt="Black Hole">
+                <h3><a href="Last chance to root for Jupiter JUICE in Kerbal Space Program 2 moon explorer challenge.html"
+                        target="_blank">Last chance to root for JUICE in Kerbal Space Program 2 moon explorer
+                        challenge</a></h3>
+            </div>
+
+            <div class="article">
+                <img class="latest" src="https://cdn.mos.cms.futurecdn.net/4L6sYUFmXX9BmTYhnkx58c-1200-80.jpeg.webp"
+                    alt="Galaxy">
+                <h3><a href="Mysterious dark energy is spread evenly across the cosmos.html" target="_blank">Mysterious
+                        dark energy is spread evenly across the cosmos</a></h3>
+            </div>
+
+            <div class="article">
+                <img class="latest" src="https://cdn.mos.cms.futurecdn.net/kTXtDJgxStDiiz5GBL8tUS-1024-80.jpeg"
+                    alt="Jupiter">
+                <h3><a href="Hubble Telescope gazes into the heart of a monstrous galaxy cluster (photo).html"
+                        target="_blank">Hubble Telescope gazes into the heart of a monstrous galaxy cluster (photo)</a>
+                </h3>
+            </div>
+            <div class="article">
+                <img class="latest" src="https://cdn.mos.cms.futurecdn.net/yQExx838WEGrBrQj8MrW4k-1200-80.jpeg.webp"
+                    alt="Black Hole">
+                <h3><a href="Mystery solved, Runaway black hole chased by tail of stars may be galaxy in disguise.html"
+                        target="_blank">Mystery solved? Runaway black hole chased by tail of stars may be galaxy in
+                        disguise</a></h3>
+            </div>
+
+            <div class="article">
+                <img class="latest" src="https://cdn.mos.cms.futurecdn.net/qSrmdRr88QfurtNKyeNfF3-1024-80.jpeg"
+                    alt="Mars">
+                <h3><a href="Vast Space to launch 1st private station on SpaceX rocket in 2025.html"
+                        target="_blank">Vast Space to launch 1st private station on SpaceX rocket in 2025</a></h3>
+            </div>
+
+            <div class="article">
+                <img class="latest" src="https://cdn.mos.cms.futurecdn.net/j8F3RHqE8WaHXrJ28DWAv8-1200-80.jpg.webp"
+                    alt="Galaxy">
+                <h3><a href="Hubble telescope spies 'peek-a-boo' exoplanets amid star's tilted dust rings.html"
+                        target="_blank">Hubble telescope spies 'peek-a-boo' exoplanets amid star's tilted dust rings</a>
+                </h3>
+            </div>
+
+            <div class="article">
+                <img class="latest" src="https://cdn.mos.cms.futurecdn.net/xvqo8bZeK9ZYr3DmxtK274-1024-80.jpeg"
+                    alt="Jupiter">
+                <h3><a href="Young star shoots out jet like a garden sprinkler in Orion Nebula (photo).html"
+                        target="_blank">Young star shoots out jet like a garden sprinkler in Orion Nebula (photo)</a>
+                </h3>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

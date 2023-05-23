@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Star in Column Grid</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        body {
+            background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+            background-repeat: repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        body::after {
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+            background-repeat: repeat;
+            background-position: center center;
+            z-index: -1;
+            filter: brightness(0.2);
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: right;
+        }
+
+        nav li .navi {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li .navi:hover {
+            background-color: #111;
+        }
+
+        .logo {
+            float: left;
+            width: 45px;
+            height: 45px;
+            margin-right: 20px;
+            border: 2px solid gray;
+            filter: grayscale(50%);
+            border-radius: 50%;
+
+        }
+
+
+
+        header {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .StarsMain {
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .StarsMain p {
+            text-align: justify;
+            text-indent: 2em;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 20px;
+            color: #fff;
+        }
+
+        main {
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+        }
+
+        .col-1 {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .col-1 h2 {
+            text-align: center;
+        }
+
+        .col-1 p {
+            text-align: justify;
+        }
+
+        .col-2 {
+            flex: 1;
+            padding: 0 10px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .col-2 {
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .stars {
+            max-width: 100%;
+            height: 460px;
+            display: block;
+            margin: 20px auto;
+            align-content: center;
+            justify-content: center;
+            border-radius: 50%
+        }
+
+        .stars {
+            justify-content: center;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img class="logo" src="logo.jpg" alt="Astronomy Webpage Logo">
+        </div>
+        <ul>
+            <li><a class="navi" href="About.html">About</a></li>
+            <li><a class="navi" href="Telescopes.html">Telescopes</a></li>
+            <li><a class="navi" href="Galaxies.html">Galaxies</a></li>
+            <li><a class="navi" href="Stars.html">Stars</a></li>
+            <li><a class="navi" href="SolarSystem.html">Solar System</a></li>
+            <li><a class="navi" href="News.html">News</a></li>
+            <li><a class="navi" href="ProjectWebsite.html">Home</a></li>
+        </ul>
+    </nav>
+    <header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Stars — Astronomy</h1>
+    </header>
+    <main>
+        <div class="StarsMain">
+            <h2>Stars</h2>
+            <p>Stars are luminous celestial objects composed of hot gases that emit light and other forms of radiation.
+                They are formed from clouds of gas and dust in space, known as nebulae, which undergo gravitational
+                collapse to form a protostar. As the protostar continues to contract, it heats up and begins to emit
+                radiation, eventually reaching a stable state known as the main sequence.
+
+                Stars vary in size, temperature, and luminosity, with some being much larger and brighter than others.
+                The classification of stars is based on their spectral type, which is determined by their temperature
+                and chemical composition. The most common spectral types are O, B, A, F, G, K, and M, with O-type stars
+                being the hottest and most massive, and M-type stars being the coolest and least massive.
+
+                Stars undergo a process of nuclear fusion in their cores, which converts hydrogen into helium and
+                releases energy in the form of light and heat. This process creates the outward pressure that
+                counteracts the force of gravity and allows stars to maintain their shape and stability.
+
+                Eventually, stars run out of fuel and begin to evolve, with smaller stars becoming white dwarfs, larger
+                stars becoming supernovae and then neutron stars or black holes. These events can have a significant
+                impact on their surrounding environments and can even give rise to new stars and planetary systems.
+
+                Stars have played a crucial role in human history and culture, serving as navigational guides and
+                symbols of beauty and wonder. They continue to fascinate astronomers and scientists, who study them to
+                learn more about the universe and its origins.</p>
+            <br>
+            <br>
+            <h2>Types of Stars</h2>
+        </div>
+        <br>
+        <br>
+        <section class="grid">
+            <div class="col-1">
+                <h2>Main Sequence Stars</h2>
+                <p>Main sequence stars are the most common type of star in the universe, representing approximately 90%
+                    of all stars. These stars are in a stable state of nuclear fusion, where hydrogen is converted into
+                    helium in their cores, releasing energy in the form of light and heat. The temperature and
+                    luminosity of main sequence stars are related to their mass, with more massive stars being hotter
+                    and more luminous than smaller stars.
+
+                    The main sequence can be divided into different spectral types, ranging from O-type stars, which are
+                    the hottest and most massive, to M-type stars, which are the coolest and least massive. This
+                    classification is based on the temperature and chemical composition of the star's surface, with
+                    O-type stars having temperatures of around 30,000 K and M-type stars having temperatures of around
+                    3,000 K.
+
+                    Main sequence stars typically have lifetimes ranging from millions to billions of years, depending
+                    on their mass. Smaller, cooler stars can burn their fuel more slowly and can have lifetimes of tens
+                    or even hundreds of billions of years. Larger, hotter stars, on the other hand, consume their fuel
+                    more quickly and have much shorter lifetimes of only a few million years.
+
+                    As main sequence stars evolve, they can change their size, temperature, and luminosity, leading to
+                    the formation of other types of stars, such as red giants and white dwarfs. The study of main
+                    sequence stars is important in understanding stellar evolution and the characteristics of planetary
+                    systems, as many of the planets we have discovered orbit main sequence stars.</p>
+            </div>
+            <div class="col-2">
+                <img class="stars"
+                    src="https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3Acbbd4a805436be7e3dba4f5fd0c964e5b84dc0eae377762c3c26813e%2BIMAGE_TINY%2BIMAGE_TINY.1"
+                    alt="Star">
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="grid">
+            <div class="col-1">
+                <h2>Red Giants</h2>
+                <p>Red giants are stars that have exhausted the hydrogen in their cores and have begun to fuse helium
+                    into heavier elements. As a result, they expand and cool, becoming much larger and redder than they
+                    were in their main sequence phase. Red giants can have radii up to 200 times that of the Sun, but
+                    they are much less dense.
+
+                    Red giants are found in the later stages of stellar evolution, typically after a star has been on
+                    the main sequence for several billion years. As they evolve, their outer layers become cooler and
+                    more diffuse, causing the star's luminosity to increase dramatically. This increase in luminosity
+                    can make red giants up to 10,000 times brighter than the Sun.
+
+                    The process of helium fusion in the core of a red giant can eventually lead to the production of
+                    even heavier elements, such as carbon and oxygen. Red giants can also expel material into space,
+                    creating a shell of gas and dust around the star known as a circumstellar envelope.
+
+                    The exact characteristics of a red giant depend on the mass of the star, with more massive stars
+                    becoming red supergiants instead of red giants. Red giants and red supergiants play an important
+                    role in the universe, as they are responsible for producing many of the heavier elements that make
+                    up planets and life forms.</p>
+            </div>
+            <div class="col-2">
+                <img class="stars" src="https://www.nasa.gov/sites/default/files/636887main_sdo-roll_0.jpg" alt="Star">
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="grid">
+            <div class="col-1">
+                <h2>White Dwarfs</h2>
+                <p>White dwarfs are the end stage of evolution for stars with low to medium mass, such as our Sun. They
+                    are very dense, with a mass comparable to that of the Sun, but a size similar to that of the Earth.
+                    This makes them one of the densest known objects in the universe, with a density of around 1 million
+                    times that of water.
+
+                    White dwarfs are formed when a star has exhausted all of its nuclear fuel and can no longer generate
+                    enough energy to support itself against the force of gravity. As the star's core collapses, its
+                    outer layers are expelled into space, forming a planetary nebula. The remaining core of the star,
+                    which is mostly composed of carbon and oxygen, becomes a white dwarf.
+
+                    White dwarfs are extremely hot when they are first formed, with temperatures of up to 100,000 K, but
+                    they gradually cool over time. They are also very faint and difficult to observe, as they emit most
+                    of their radiation in the ultraviolet part of the spectrum.
+
+                    One of the most interesting properties of white dwarfs is that they are supported against gravity by
+                    electron degeneracy pressure. This means that the pressure in the core of the white dwarf is
+                    generated by the repulsion between electrons, rather than by the heat generated by nuclear fusion.
+                    The maximum mass that a white dwarf can support in this way is around 1.4 times that of the Sun,
+                    which is known as the Chandrasekhar limit.
+
+                    White dwarfs can also be the source of Type Ia supernovae, which occur when a white dwarf accretes
+                    material from a companion star and exceeds the Chandrasekhar limit, triggering a runaway nuclear
+                    fusion reaction.</p>
+            </div>
+            <div class="col-2">
+                <img class="stars"
+                    src="https://www.nasa.gov/sites/default/files/images/139459main_image_feature_468_ys_full.jpg"
+                    alt="Star">
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="grid">
+            <div class="col-1">
+                <h2>Neutron Stars</h2>
+                <p>Neutron stars are one of the most extreme objects in the universe, with a mass similar to that of the
+                    Sun but a size of only about 20 km. They are formed when a massive star undergoes a supernova
+                    explosion and the core collapses under the force of gravity, resulting in a density so high that the
+                    protons and electrons in the atoms are crushed together to form neutrons.
+
+                    Neutron stars are incredibly dense, with a density of about 10^14 grams per cubic centimeter, making
+                    them some of the densest objects known in the universe. They also have a very strong magnetic field,
+                    which can be up to a billion times stronger than the magnetic field of the Earth.
+
+                    Because of their small size and high density, neutron stars have a number of unusual properties. For
+                    example, their intense gravitational fields can cause the distortion of spacetime around them,
+                    leading to phenomena such as gravitational lensing and time dilation. They also rotate very rapidly,
+                    with some neutron stars completing thousands of rotations per second.
+
+                    The rotation of a neutron star can produce beams of radiation, which can be observed as pulses if
+                    the beams are oriented in the direction of Earth. These pulsars, as they are known, were first
+                    observed in 1967 by Jocelyn Bell Burnell and Anthony Hewish and have since been studied extensively
+                    by astronomers.
+
+                    The rotation of a neutron star can produce beams of radiation, which can be observed as pulses if
+                    the beams are oriented in the direction of Earth. These pulsars, as they are known, were first
+                    observed in 1967 by Jocelyn Bell Burnell and Anthony Hewish and have since been studied extensively
+                    by astronomers.
+
+                    Neutron stars are also believed to be the source of some of the most energetic events in the
+                    universe, such as gamma-ray bursts and kilonovae. They are also thought to play a key role in the
+                    production of heavy elements through a process known as the r-process.</p>
+            </div>
+            <div class="col-2">
+                <img class="stars"
+                    src="https://64.media.tumblr.com/3ebf2a9b908c227aa5ab684d3d11f4e4/tumblr_inline_ope7hsmr0l1tzhl5u_500.gifv"
+                    alt="Star">
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="grid">
+            <div class="col-1">
+                <h2>Black Holes</h2>
+                <p>Black holes are one of the most mysterious objects in the universe, with a gravitational pull so
+                    strong that nothing, not even light, can escape once it crosses a certain boundary called the event
+                    horizon. Black holes are formed when massive stars run out of fuel and collapse under their own
+                    gravity, or when two neutron stars merge and form a larger object.
+
+                    The defining feature of a black hole is its event horizon, which is the point of no return beyond
+                    which anything that enters will be consumed by the black hole. The event horizon is also the
+                    boundary beyond which the gravitational pull of the black hole becomes so strong that not even light
+                    can escape, making black holes effectively invisible to telescopes.
+
+                    Black holes come in different sizes, from a few times the mass of the Sun to supermassive black
+                    holes that are millions or even billions of times more massive than the Sun. Supermassive black
+                    holes are thought to exist at the centers of most galaxies, including our own Milky Way.
+
+                    Despite their invisibility, black holes can be detected indirectly through their effects on nearby
+                    matter. As matter falls into a black hole, it heats up and emits radiation, which can be detected by
+                    telescopes. Black holes can also cause the acceleration of nearby stars and gas, leading to the
+                    formation of accretion disks and jets of matter that can be observed in radio and X-ray wavelengths.
+                </p>
+            </div>
+            <div class="col-2">
+                <img class="stars"
+                    src="https://www.nasa.gov/sites/default/files/thumbnails/image/bh_accretiondisk_sim_stationary_websize.gif"
+                    alt="Star">
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="grid">
+            <div class="col-1">
+                <h2>Binary Stars</h2>
+                <p>Binary stars are two stars that are gravitationally bound and orbit around a common center of mass.
+                    They are common in the universe, and many stars, including our own Sun, are part of a binary or
+                    multiple star system.
+
+                    Binary stars can come in different configurations, depending on the distance between the two stars
+                    and their masses. In a close binary system, the two stars are separated by only a few astronomical
+                    units (AU), or the distance between the Earth and the Sun. In a wide binary system, the two stars
+                    are separated by several hundred or even thousands of AU.
+
+                    Binary stars can also have different masses, with one star being more massive than the other. These
+                    are known as unequal mass binaries, and they can have a significant effect on the evolution of the
+                    stars.
+
+                    One important aspect of binary stars is their interaction with each other. The gravitational pull of
+                    one star can affect the other star's orbit and even cause it to change its shape. This interaction
+                    can lead to a transfer of mass between the two stars, with one star pulling material from the other.
+                    This can result in a variety of phenomena, such as the formation of accretion disks, jets, and even
+                    supernova explosions.
+
+                    Binary stars also provide a unique opportunity for astronomers to study the properties of stars,
+                    such as their masses, radii, and temperatures, by observing their motion and changes in their light
+                    over time. The study of binary stars has contributed significantly to our understanding of stellar
+                    evolution, the properties of stars, and the structure and dynamics of the universe.</p>
+            </div>
+            <div class="col-2">
+                <img class="stars"
+                    src="https://64.media.tumblr.com/292d5127686cdc94980fa42bbe376ddd/bf5cf0a6970d79da-e2/s500x750/c3fa7c651c5ae7a774b88867eb3969694b0848ec.gifv"
+                    alt="Star">
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="grid">
+            <div class="col-1">
+                <h2>Variable Stars</h2>
+                <p>Variable stars are stars that change their brightness over time. There are many different types of
+                    variable stars, each with its own unique characteristics and causes for variability.
+
+                    One common type of variable star is the pulsating variable, which changes its brightness due to
+                    variations in its size and temperature. These stars expand and contract in a regular cycle, causing
+                    their brightness to increase and decrease over time. One well-known example of a pulsating variable
+                    is the Cepheid variable, which has a very precise relationship between its period of pulsation and
+                    its intrinsic brightness. This relationship has allowed astronomers to use Cepheid variables as
+                    "standard candles" to measure the distances to faraway galaxies.
+
+                    Another type of variable star is the eclipsing binary, which consists of two stars that orbit each
+                    other in such a way that one star periodically passes in front of the other, causing a decrease in
+                    overall brightness. By studying the period and duration of these eclipses, astronomers can determine
+                    the size and distance between the two stars, as well as their masses.
+
+                    Other types of variable stars include cataclysmic variables, which undergo sudden and dramatic
+                    increases in brightness due to accretion of material from a companion star, and eruptive variables,
+                    which experience irregular and unpredictable outbursts of energy and matter.</p>
+            </div>
+            <div class="col-2">
+                <img class="stars" src="https://vanderbei.princeton.edu/images/NJP/m15_RRlyrae3.gif" alt="Star">
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="grid">
+            <div class="col-1">
+                <h2>Supergiants</h2>
+                <p>Supergiants are among the most massive and luminous stars in the universe. They are characterized by
+                    their enormous size, high luminosity, and relatively short lifespan compared to other types of
+                    stars. Supergiants are classified as either red or blue, depending on their surface temperature and
+                    color.
+
+                    Red supergiants are cool, massive stars that have exhausted the hydrogen fuel in their cores and are
+                    now fusing heavier elements in shells around the core. They are characterized by their red color and
+                    have radii that are typically hundreds of times larger than the Sun. Betelgeuse, located in the
+                    constellation Orion, is a well-known example of a red supergiant.
+
+                    Blue supergiants are hot, massive stars that are still fusing hydrogen in their cores. They are
+                    characterized by their blue-white color and have radii that are typically tens of times larger than
+                    the Sun. Blue supergiants are among the most luminous stars in the universe, with some having
+                    luminosities that are millions of times greater than that of the Sun. Rigel, located in the
+                    constellation Orion, is a well-known example of a blue supergiant.
+
+                    Supergiants are short-lived stars, with lifetimes of only a few million years compared to the
+                    billions of years of the Sun. They typically end their lives in spectacular explosions known as
+                    supernovae, which can briefly outshine entire galaxies and release enormous amounts of energy and
+                    matter into space. The study of supergiants is important for understanding the properties and
+                    evolution of massive stars, as well as for studying the chemical enrichment of the universe and the
+                    production of heavy elements.
+
+                </p>
+            </div>
+            <div class="col-2">
+                <img class="stars" src="https://telescopicwatch.com/wp-content/uploads/2019/04/01-Zeta-Puppis.jpg"
+                    alt="Star">
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="grid">
+            <div class="col-1">
+                <h2>Wolf-Rayet Stars</h2>
+                <p>Wolf-Rayet stars are a rare class of massive, evolved stars that are characterized by their strong
+                    stellar winds and high surface temperatures. They were first identified by astronomers Charles Wolf
+                    and Georges Rayet in the mid-19th century.
+
+                    Wolf-Rayet stars are typically very hot, with surface temperatures ranging from 30,000 to 200,000
+                    Kelvin. They are also very massive, typically 20 times or more massive than the Sun, and are
+                    extremely luminous, emitting intense radiation across a wide range of wavelengths.
+
+                    One of the defining features of Wolf-Rayet stars is their strong stellar winds, which can reach
+                    speeds of up to several thousand kilometers per second. These winds are driven by the stars' intense
+                    radiation, which heats and ionizes the surrounding gas, causing it to be blown away from the star in
+                    powerful outflows. These outflows can have a significant impact on the evolution of the star and its
+                    environment, and can even contribute to the formation of new stars and planets.
+
+                    Wolf-Rayet stars are believed to be in a transitional phase between the main sequence and other more
+                    exotic stellar states, such as supernovae and black holes. They are thought to evolve rapidly, with
+                    lifetimes of only a few hundred thousand years, and many are expected to end their lives in
+                    spectacular supernova explosions.</p>
+            </div>
+            <div class="col-2">
+                <img class="stars" src="https://cdn.esawebb.org/archives/images/screen/weic2307f.jpg" alt="Star">
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="grid">
+            <div class="col-1">
+                <h2>Brown Dwarfs</h2>
+                <p>Brown dwarfs are substellar objects that are too massive to be classified as planets but are not
+                    massive enough to initiate sustained nuclear fusion in their cores like main sequence stars. They
+                    are often referred to as "failed stars" or "sub-stellar objects."
+
+                    Brown dwarfs are typically between 13 and 80 times the mass of Jupiter, and their radii can range
+                    from around the size of Jupiter to around 1.5 times the radius of the Sun. They are relatively cool
+                    and dim, with surface temperatures ranging from around 1,500 to 2,700 Kelvin. As a result, they emit
+                    most of their radiation in the infrared portion of the electromagnetic spectrum.
+
+                    Unlike stars, which generate energy through sustained nuclear fusion in their cores, brown dwarfs
+                    generate energy primarily through gravitational contraction. This means that they gradually cool and
+                    dim over time as they lose heat, eventually becoming dark and difficult to detect.
+
+                    Brown dwarfs are believed to be relatively common in the universe, and they are often found in close
+                    proximity to stars. They are also thought to be important in the formation and evolution of
+                    planetary systems, as they can contribute to the gravitational perturbations that shape the orbits
+                    of planets and other objects.</p>
+            </div>
+            <div class="col-2">
+                <img class="stars" src="https://www.nasa.gov/sites/default/files/thumbnails/image/pia21752-16.gif"
+                    alt="Star">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by [ Ryo ] | © 2023</p>
+    </footer>
+</body>
+
+</html>

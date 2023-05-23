@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Solar System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        body {
+            background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+            background-repeat: repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        body::after {
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://w0.peakpx.com/wallpaper/241/159/HD-wallpaper-black-stars-black-aesthetic.jpg);
+            background-repeat: repeat;
+            background-position: center center;
+            z-index: -1;
+            filter: brightness(0.2);
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .Planets {
+            font-size: larger;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: right;
+        }
+
+        nav li .navi {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li .navi:hover {
+            background-color: #111;
+        }
+
+        .logo {
+            float: left;
+            width: 45px;
+            height: 45px;
+            margin-right: 20px;
+            border: 2px solid gray;
+            filter: grayscale(50%);
+            border-radius: 50%;
+
+        }
+
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .solarsystem {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #cccccc;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img class="logo" src="logo.jpg" alt="Astronomy Webpage Logo">
+        </div>
+        <ul>
+            <li><a class="navi" href="About.html">About</a></li>
+            <li><a class="navi" href="Telescopes.html">Telescopes</a></li>
+            <li><a class="navi" href="Galaxies.html">Galaxies</a></li>
+            <li><a class="navi" href="Stars.html">Stars</a></li>
+            <li><a class="navi" href="SolarSystem.html">Solar System</a></li>
+            <li><a class="navi" href="News.html">News</a></li>
+            <li><a class="navi" href="ProjectWebsite.html">Home</a></li>
+        </ul>
+    </nav>
+    <header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Solar System — Astronomy</h1>
+    </header>
+    <main>
+        <section>
+            <img class="solarsystem" src="https://umbra.nascom.nasa.gov/images/latest_aia_304.gif" alt="Sun">
+            <h2>Sun</h2>
+            <p>
+                The Sun is the star at the center of the Solar System, around which all the planets orbit. It is a
+                nearly perfect sphere of hot plasma, with internal convective motion that creates its magnetic field.
+                The Sun's surface, known as the photosphere, has a temperature of around 5,500 degrees Celsius (9,932
+                degrees Fahrenheit), and emits light and other forms of electromagnetic radiation.
+
+                The Sun is about 4.6 billion years old and is considered a middle-aged star. It has a diameter of
+                approximately 1.4 million kilometers (870,000 miles), making it about 109 times the size of the Earth.
+                Its mass is about 330,000 times that of Earth, accounting for 99.86% of the total mass of the Solar
+                System.
+
+                The Sun's energy is produced through nuclear fusion, where hydrogen atoms are fused together to form
+                helium. This process releases a tremendous amount of energy in the form of light and heat, which is
+                responsible for sustaining life on Earth. The Sun also emits a stream of charged particles known as the
+                solar wind, which interacts with the Earth's magnetic field to create the auroras or Northern and
+                Southern Lights.</p>
+
+        </section>
+        <div class="divider"></div>
+        <section class="Planets">
+            <h2>Planets</h2>
+            <ul>
+                <li><a href="#mercury">Mercury</a></li>
+                <li><a href="#venus">Venus</a></li>
+                <li><a href="#earth">Earth</a></li>
+                <li><a href="#mars">Mars</a></li>
+                <li><a href="#jupiter">Jupiter</a></li>
+                <li><a href="#saturn">Saturn</a></li>
+                <li><a href="#uranus">Uranus</a></li>
+                <li><a href="#neptune">Neptune</a></li>
+            </ul>
+        </section>
+        <section id="mercury">
+            <img class="solarsystem"
+                src="https://www.nasa.gov/sites/default/files/images/729223main_728322main_messenger_orbit_image20130218_2_full_full_full.jpg"
+                alt="Mercury">
+            <h2>Mercury</h2>
+            <p>Mercury is the smallest planet in the Solar System and is the closest planet to the Sun. It is named
+                after the Roman messenger god, Mercury, known for his speed, as the planet moves the fastest in its
+                orbit around the Sun, completing one revolution in just 88 Earth days.
+
+                Mercury is a rocky planet, similar in composition to Earth's Moon, with a heavily cratered surface. It
+                has a very thin atmosphere, with no protective magnetic field, which exposes the surface to intense
+                solar radiation and solar winds. As a result, the surface temperature of Mercury ranges from around -173
+                degrees Celsius (-280 degrees Fahrenheit) at night to 427 degrees Celsius (800 degrees Fahrenheit)
+                during the day, making it the hottest planet in the Solar System.
+
+                Due to its close proximity to the Sun, it has a very short year and day, with one year being equivalent
+                to just 88 Earth days and one day being approximately 176 Earth days long. This means that a single day
+                on Mercury lasts longer than a year.
+
+                Mercury is also known for its peculiar orbit, which is elongated and elliptical, causing it to appear to
+                move backwards in the sky at certain times, a phenomenon known as retrograde motion.
+
+                Despite being the smallest planet, Mercury still has some interesting features, such as cliffs that can
+                be up to a mile high and craters that contain water ice, despite the planet's scorching surface
+                temperatures. Overall, Mercury is a fascinating planet, and much remains to be discovered about its
+                unique characteristics and properties.</p>
+
+        </section>
+        <div class="divider"></div>
+        <section id="venus">
+            <img class="solarsystem"
+                src="https://www.nasa.gov/sites/default/files/thumbnails/image/imagesvenus20191211venus20191211-16.jpeg"
+                alt="Venus">
+            <h2>Venus</h2>
+            <p>Venus is the second planet from the Sun and is often called Earth's sister planet due to its similar
+                size, mass, and composition. However, Venus has a much harsher environment than Earth, with an extremely
+                thick and toxic atmosphere that traps heat and makes the surface of the planet incredibly hot.
+
+                Venus has a rocky surface with mountains, valleys, and craters, but its surface is almost completely
+                obscured by a thick layer of clouds made up of sulfuric acid. These clouds reflect sunlight, giving
+                Venus a bright, shiny appearance in the sky.
+
+                The planet rotates very slowly, taking around 243 Earth days to complete a single rotation, which is
+                longer than its year, which is approximately 225 Earth days long. Venus also rotates in the opposite
+                direction to most other planets in the Solar System, with the sun rising in the west and setting in the
+                east.
+
+                Due to its thick atmosphere, Venus experiences a strong greenhouse effect, which keeps the planet's
+                surface temperature at a scorching 462 degrees Celsius (864 degrees Fahrenheit), making it the hottest
+                planet in the Solar System. This makes it difficult for any spacecraft to land on the surface, and only
+                a handful of missions have been able to do so.
+
+                Despite the harsh conditions, Venus remains a fascinating planet for scientists to study, and there is
+                much to learn about its geology, atmosphere, and unique features, such as the presence of lightning and
+                volcanic activity.</p>
+
+        </section>
+        <div class="divider"></div>
+        <section id="earth">
+            <img class="solarsystem"
+                src="https://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg" alt="Earth">
+            <h2>Earth</h2>
+            <p>Earth is the third planet from the Sun and is the only known planet in the universe to support life. It
+                is a rocky planet with a diameter of approximately 12,742 kilometers (7,918 miles) and a mass of 5.97 x
+                10^24 kilograms.
+
+                Earth has a unique atmosphere, which contains a mixture of gases that are essential for life, such as
+                oxygen and nitrogen, as well as trace amounts of carbon dioxide and other gases. The atmosphere also
+                protects the planet from harmful solar radiation and meteoroids.
+
+                The planet has a solid surface, composed of continents and oceans, which are in constant motion due to
+                plate tectonics. Earth's surface also features diverse landscapes, such as mountains, deserts, forests,
+                and oceans, which provide habitats for a wide variety of plant and animal species.
+
+                The planet's climate is influenced by various factors, such as its distance from the Sun, the tilt of
+                its axis, and the distribution of its land masses and oceans. Earth's climate is also impacted by human
+                activities, such as the burning of fossil fuels and deforestation, which contribute to global warming
+                and climate change.
+
+                Earth is also home to a diverse array of life forms, from tiny microorganisms to large mammals. Human
+                beings, in particular, have developed complex societies and cultures, and have made significant
+                advancements in technology and scientific knowledge.
+
+            </p>
+
+        </section>
+        <div class="divider"></div>
+        <section id="mars">
+            <img class="solarsystem" src="https://solarsystem.nasa.gov/internal_resources/3841" alt="Mars">
+            <h2>Mars</h2>
+            <p>Mars is the fourth planet from the Sun and is often called the Red Planet due to its rusty red color
+                caused by iron oxide or rust on its surface. It is a rocky planet with a diameter of approximately 6,779
+                kilometers (4,212 miles) and a mass of 6.39 x 10^23 kilograms.
+
+                Mars has a thin atmosphere, with no protective magnetic field, which exposes the surface to intense
+                solar radiation and solar winds. The atmosphere is mostly made up of carbon dioxide, with trace amounts
+                of nitrogen and argon. Due to its thin atmosphere, Mars experiences large temperature variations, with
+                temperatures ranging from as low as -140 degrees Celsius (-220 degrees Fahrenheit) at the poles to as
+                high as 20 degrees Celsius (68 degrees Fahrenheit) at the equator during the day.
+
+                The planet's surface is composed of a variety of geological features, such as mountains, valleys,
+                craters, and plains. Mars also has the largest volcano in the Solar System, Olympus Mons, and the
+                deepest canyon, Valles Marineris. Mars is also known for its polar ice caps, which consist of a mixture
+                of water ice and carbon dioxide.
+
+                Mars is a focus of exploration for scientists, as it is believed to have once had liquid water on its
+                surface, and may have had the conditions necessary to support life. Several missions, both robotic and
+                manned, have been sent to Mars to study its geology, climate, and potential habitability.</p>
+
+        </section>
+        <div class="divider"></div>
+        <section id="jupiter">
+            <img class="solarsystem"
+                src="https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBalJWIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--34da91192ff836355ec6c8546ab71e955856964a/Full_Jupiter-800.jpg?disposition=inline"
+                alt="Jupiter">
+            <h2>Jupiter</h2>
+            <p>Jupiter is the fifth planet from the Sun and is the largest planet in the Solar System. It is a gas giant
+                with a diameter of approximately 142,984 kilometers (88,846 miles) and a mass of 1.898 x 10^27
+                kilograms, which is more than twice the mass of all the other planets in the Solar System combined.
+
+                Jupiter's atmosphere is made up mostly of hydrogen and helium, with trace amounts of other gases, such
+                as methane, ammonia, and water vapor. The atmosphere contains colorful bands of clouds, which are
+                created by high winds that blow in opposite directions at different latitudes.
+
+                Jupiter has a very strong magnetic field, which is the strongest of any planet in the Solar System. The
+                magnetic field is thought to be generated by the motion of metallic hydrogen in the planet's core.
+
+                The planet has a complex system of moons, with over 79 known moons, including four large moons known as
+                the Galilean moons: Io, Europa, Ganymede, and Callisto. These moons are of particular interest to
+                scientists, as they may have the potential to support life.
+
+                Jupiter is also known for its numerous storms, including the Great Red Spot, a giant storm that has been
+                raging for at least 350 years. The storm is larger than the size of Earth and is thought to be caused by
+                the interaction between different gases in the planet's atmosphere.
+
+                Jupiter has been visited by several spacecraft, including the Pioneer, Voyager, Galileo, and Juno
+                missions, which have provided valuable data and images of the planet and its moons. Jupiter remains a
+                fascinating planet, with much to discover about its atmosphere, magnetic field, and unique features.</p>
+
+        </section>
+        <div class="divider"></div>
+        <img class="solarsystem"
+            src="https://solarsystem.nasa.gov/system/stellar_items/image_files/38_saturn_1600x900.jpg" alt="Saturn">
+        <section id="saturn">
+            <h2>Saturn</h2>
+            <p>Saturn is the sixth planet from the Sun and is one of the gas giants in the Solar System. It is known for
+                its distinctive ring system, which is made up of icy particles ranging in size from tiny grains to large
+                boulders. Saturn has a diameter of approximately 116,460 kilometers (72,367 miles) and a mass of 5.68 x
+                10^26 kilograms.
+
+                Saturn's atmosphere is primarily composed of hydrogen and helium, with trace amounts of other gases,
+                such as methane and ammonia. The atmosphere features bands of clouds similar to those of Jupiter, but
+                they are less colorful and less prominent.
+
+                Saturn's ring system is composed of seven main rings, which are labeled using letters of the alphabet in
+                the order they were discovered. The rings are very thin, with a thickness of only a few tens of meters,
+                and are thought to be the remnants of a moon or a comet that was destroyed by the planet's gravity.
+
+                Saturn has a complex system of moons, with over 80 known moons. One of the most interesting of these
+                moons is Titan, which is the second-largest moon in the Solar System and the only moon known to have a
+                dense atmosphere. Titan's atmosphere is primarily composed of nitrogen, with trace amounts of methane
+                and other gases.
+
+                Saturn has a strong magnetic field, which is the second strongest of any planet in the Solar System. The
+                magnetic field is thought to be generated by the motion of metallic hydrogen in the planet's core.
+
+                Saturn has been visited by several spacecraft, including the Pioneer, Voyager, Cassini, and Huygens
+                missions, which have provided valuable data and images of the planet, its rings, and its moons. Saturn
+                remains a fascinating planet, with much to discover about its unique characteristics and potential for
+                future exploration.</p>
+
+        </section>
+        <div class="divider"></div>
+        <section id="uranus">
+            <img class="solarsystem"
+                src="https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb2hWIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fad60db21d87add7772e08dca0ecf791ce07a531/uranus_carousel_1.jpg?disposition=inline"
+                alt="Uranus">
+            <h2>Uranus</h2>
+            <p>Uranus is the seventh planet from the Sun and is one of the ice giants in the Solar System. It has a
+                diameter of approximately 50,724 kilometers (31,518 miles) and a mass of 8.68 x 10^25 kilograms.
+
+                Uranus has a unique feature in that it rotates on its side, with its axis of rotation tilted at an angle
+                of approximately 98 degrees relative to its orbit around the Sun. This unusual orientation is thought to
+                have been caused by a collision with a large object early in the planet's history.
+
+                The atmosphere of Uranus is primarily composed of hydrogen and helium, with small amounts of methane,
+                which gives the planet its blue-green color. Uranus has a faint ring system, which was discovered in
+                1977, and which consists of narrow, dark rings.
+
+                Uranus has a complex system of moons, with 27 known moons, the largest of which are Miranda, Ariel,
+                Umbriel, Titania, and Oberon. These moons are made up of rock and ice and have a variety of surface
+                features, including craters, valleys, and mountains.
+
+                Uranus has a weak magnetic field, which is tilted at an angle of about 60 degrees relative to its
+                rotation axis. This is believed to be due to the planet's unusual rotation and magnetic field generation
+                processes.
+
+                Uranus has been visited by only one spacecraft, Voyager 2, which flew by the planet in 1986 and provided
+                valuable data and images of the planet, its rings, and its moons. Uranus remains a fascinating planet,
+                with much to learn about its unique characteristics and its place in the Solar System.</p>
+
+        </section>
+        <div class="divider"></div>
+        <section id="neptune">
+            <img class="solarsystem" src="https://www.nasa.gov/sites/default/files/thumbnails/image/pia01492-main.jpg"
+                alt="Neptune">
+            <h2>Neptune</h2>
+            <p>Neptune is the eighth planet from the Sun and is the most distant planet in the Solar System. It has a
+                diameter of approximately 49,244 kilometers (30,775 miles) and a mass of 1.02 x 10^26 kilograms.
+
+                Neptune has a bluish color, which is due to the presence of methane in its atmosphere. Its atmosphere is
+                primarily composed of hydrogen, helium, and methane, with small amounts of other gases. Neptune has a
+                faint ring system, which was discovered in 1984, and which consists of dark, narrow rings.
+
+                Neptune has a complex system of moons, with 14 known moons, the largest of which is Triton. Triton is of
+                particular interest to scientists, as it is the only large moon in the Solar System that orbits in the
+                opposite direction of its planet's rotation. Triton is also thought to have originated from the Kuiper
+                Belt, a region of the Solar System beyond Neptune that is home to many icy objects.
+
+                Neptune has a strong magnetic field, which is tilted at an angle of about 47 degrees relative to its
+                rotation axis. The magnetic field is thought to be generated by the motion of metallic hydrogen in the
+                planet's core.
+
+                Neptune has been visited by only one spacecraft, Voyager 2, which flew by the planet in 1989 and
+                provided valuable data and images of the planet, its rings, and its moons. Neptune remains a fascinating
+                planet, with much to learn about its unique characteristics and its place in the Solar System.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer">Created by [Ryo] | © 2023</p>
+    </footer>
+</body>
+
+</html>
